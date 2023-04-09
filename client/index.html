@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Check-It</title>
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"  />
+</head>
+
+<body>
+
+    <section id="home">
+        <header>
+            <a id ="logo" href="#"><img src="../img/logonew-.png"  alt=""></a>
+            <ul id="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#login">Login</a></li>
+                <li><a href="#to-do">To-Do</a></li>
+            </ul>
+        </header>
+
+        <div class="infotextTitle">
+            CHECK-IT
+        </div>
+        <div class="infotext">
+            Check-it is a website developed by Florian Portmann.
+On the 3rd page you will <br/> find a to-do list that helps you remember your tasks.
+I ask you to log in on the 2nd page to ensure your security.
+        </div>
+    </section>
+
+
+    <section id="login">
+        <div class="logindata">
+            <h3>Enter Username here:</h3>
+        
+            <div class="username"><input type="text" id="username" name="username" placeholder="Username"></div>
+        
+            <div class="password"><input type="password" id="password" name="password" placeholder="Passwort"></div>
+        
+           
+          
+            <!--<div class="login"><input type="submit" value="Login"></div>-->
+            <input type='button' value='login' class='loginsubmit' />
+           
+          </form>
+        </div>
+    </section>
+
+
+    <section id="to-do">
+        <h1 class="title">
+            TO DO LIST
+        </h1>
+
+        <div class="todo-list">
+            <div class="list-head">
+                <button class="add-list"> <b> Add  </button>
+                <input type="text" class="entered-list">
+                
+            </div>
+            <div class="tasks">
+                <div class="item">
+                    <!--<p>new item here</p>
+                    <div class="item-btn">
+                        <i class="fa-solid fa-square-check"></i>
+                        <i class="fa-solid fa-square"></i>
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>-->
+                </div>
+            </div>
+            
+        </div>
+
+        <script src="app.js"></script>
+    </section>
+    
+    <footer>
+        <h1>Created by Florian Portmann</h1>
+        <h2>Click on this super awsome Logo to download it!!</h2>
+        <a class="desktoplink" download="logonew-.png" href="../img/logonew-.png" title="newlogo">
+            <img alt="new Logo" src="../img/logonew-.png" style="width:10%;height:10%; border-radius: 20px;">
+        </a>  
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+
+### Correct JWT
+GET http://localhost:3000/api/getall HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFsbWlyIiwiaWF0IjoxNjUyODM1NTg0LCJleHAiOjE2NTk5Nzc5ODR9.mJMFNHpK0b2vmVdAHEDUawCpwdJtTDuJ8NjTn0LOlqg
+
+### Wrong JWT
+GET http://localhost:3000/api/getall HTTP/1.1
+Authorization: Bearer fyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFsbWlyIiwiaWF0IjoxNjUyODM1NTg0LCJleHAiOjE2NTk5Nzc5ODR9.mJMFNHpK0b2vmVdAHEDUawCpwdJtTDuJ8NjTn0LOlqg
+
+### 
+GET http://localhost:3000/api/getone/book1 HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFsbWlyIiwiaWF0IjoxNjUyODM1NTg0LCJleHAiOjE2NTk5Nzc5ODR9.mJMFNHpK0b2vmVdAHEDUawCpwdJtTDuJ8NjTn0LOlqg
+
+
+### 
+POST http://localhost:3000/api/addone HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFsbWlyIiwiaWF0IjoxNjUyODM1NTg0LCJleHAiOjE2NTk5Nzc5ODR9.mJMFNHpK0b2vmVdAHEDUawCpwdJtTDuJ8NjTn0LOlqg
+content-type: application/json
+
+{
+    "name": "book3",
+    "data": {
+        "Title": "OOP programming",
+		"ISBN": "33245678912312",
+		"Author": "Book Writer",
+		"Year": "2024"
+    }
+}
+
+### 
+PUT http://localhost:3000/api/changeone HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFsbWlyIiwiaWF0IjoxNjUyODM1NTg0LCJleHAiOjE2NTk5Nzc5ODR9.mJMFNHpK0b2vmVdAHEDUawCpwdJtTDuJ8NjTn0LOlqg
+content-type: application/json
+
+{
+    "name": "book3",
+    "data": {
+        "Title": "Functional programming",
+		"ISBN": "33245678912313",
+		"Author": "Book Writer",
+		"Year": "2024"
+    }
+}
+
+### 
+DELETE http://localhost:3000/api/deleteone HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFsbWlyIiwiaWF0IjoxNjUyODM1NTg0LCJleHAiOjE2NTk5Nzc5ODR9.mJMFNHpK0b2vmVdAHEDUawCpwdJtTDuJ8NjTn0LOlqg
+content-type: application/json
+
+{
+    "name": "book3"
+}
+
+###########################################################
+
